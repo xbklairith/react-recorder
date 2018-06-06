@@ -1,23 +1,18 @@
-# react-recorder
+# react-recorder2
+
 A react component that records audio using the MediaRecorder API
+Support react version 16
 
 ## Installation
 
 ```
-npm install react-recorder
+npm install react-recorder2
 ```
 
 ## Browser Requirements
 
 This component is dependent on browser implementation of both the `navigator.getUserMedia` and `MediaRecorder` APIs. Currently only Google Chrome and Mozilla Firefox fully support these APIs. The `Recorder` component provides an `onMissingAPIs` prop that allows developers to specify the appropriate behavior if a browser is lacking support for these APIs. If `onMissingAPIs` is undefined, it defaults to calling the `alert` function to notify the user to use either Chrome or Firefox.
 
-## Example
-
-You can see the Recorder in action [here](https://agrasley.github.io/react-audio-example/). Check out the source code [here](https://github.com/agrasley/react-audio-example).
-
-## Usage with Redux
-
-If you're using Redux to handle your client-side state, [react-recorder-redux](https://github.com/agrasley/react-recorder-redux) provides actions and reducers for working with this library.
 
 ## Usage
 
@@ -82,3 +77,10 @@ Useful for Redux-like environments where changes in state are communicated via p
 ## Rendering
 
 The `Recorder` component does not have an actual representation in the DOM, returning only `false` in its render method.
+
+
+
+## Credit 
+
+This project fork from https://github.com/agrasley/react-recorder
+Latest commit Jul 15, 2016
